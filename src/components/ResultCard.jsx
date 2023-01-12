@@ -1,7 +1,6 @@
 import React from "react";
 
 const ResultCard = ({result}) => {
-  // console.log(result.imageLinks);
   const convertToCSV = (obj) => {
     let str = '';
     const header = Object.keys(obj);
@@ -23,7 +22,6 @@ const ResultCard = ({result}) => {
   }
   const image = result.imageLinks === undefined ? '' : result.imageLinks.thumbnail;
   const authorStr = result.authors.join(' & ');
-  // console.log(result.description);
   const description = result.description.length > 240 ? `${result.description.substring(0, 240)}...` : result.description;
   const downloadInfo = {
     Title: result.title,
@@ -42,7 +40,6 @@ const ResultCard = ({result}) => {
     document.body.appendChild(link);
     link.click();
   }
-  // console.log(convertToCSV(downloadInfo));
   return(
     <div className="result-card">
       <img src={image} alt={result.title} />

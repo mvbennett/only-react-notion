@@ -2,12 +2,10 @@ import React from "react";
 import { useState } from "react";
 
 const Search = ({search, setResults}) => {
-  // const [query, setQuery] = useState();
   const [input, setInput] = useState();
   const handleSubmit = async (e) => {
     e.preventDefault();
     setResults([]);
-    // setQuery(input);
     const searchResults = await search(input);
     console.log(searchResults);
     const parsedResults = [];
@@ -16,7 +14,6 @@ const Search = ({search, setResults}) => {
         parsedResults.push(result.volumeInfo);
       }
     });
-    // console.log(parsedResults);
     setResults(parsedResults);
   }
   return(
