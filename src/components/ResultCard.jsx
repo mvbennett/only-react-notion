@@ -14,7 +14,7 @@ const ResultCard = ({result}) => {
       if (i === header.length) {
         line += `"${obj[field]}"`;
       } else {
-        line += `"${obj[field]}"`+',';
+        line += `"${obj[field]}",`;
       }
     });
     str += line + '\r\n'

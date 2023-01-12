@@ -1,13 +1,11 @@
 import './App.css';
 import getApiUrl from './getApiUrl';
-// import search from './myApp';
 import Search from './components/Search';
 import Results from './components/Results';
 import { useState } from 'react';
 
 function App() {
   const [results, setResults] = useState([]);
-  // const [query, setQuery] = useState();
   const search = async (book) => {
     const url = getApiUrl(book);
     const response = await fetch(url);
