@@ -1,6 +1,8 @@
 {
-  "name": "app",
+  "name": "notion_book_injector",
   "version": "0.1.0",
+  "author": "Mike Bennett",
+  "description": "This is an app specifically for getting book information into a CSV file easily for importing into the Notion Book Library template.",
   "private": true,
   "dependencies": {
     "@electron/remote": "^2.0.9",
@@ -34,7 +36,6 @@
   "build": {
     "extends": null,
     "appId": "Notion Book Injector",
-    "author": "Mike Bennett",
     "files": [
       "dist/**/*",
       "build/**/*",
