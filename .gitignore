@@ -1,3 +1,5 @@
 .env
 getApiUrl.js
 node_modules
+dist/*
+.DS_Store

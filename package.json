@@ -33,7 +33,8 @@
   },
   "build": {
     "extends": null,
-    "appId": "com.example.electron-cra",
+    "appId": "Notion Book Injector",
+    "author": "Mike Bennett",
     "files": [
       "dist/**/*",
       "build/**/*",
